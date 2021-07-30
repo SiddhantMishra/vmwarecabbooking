@@ -1,0 +1,30 @@
+DROP TABLE IF EXISTS DRIVERDATA;
+DROP TABLE IF EXISTS CUSTOMERDATA;
+DROP TABLE IF EXISTS CABDATA;
+
+CREATE TABLE DRIVERDATA (
+  id int PRIMARY KEY,
+  drivername VARCHAR(250) NOT NULL,
+  phonenumber VARCHAR(250) NOT NULL,
+  cabtype VARCHAR(250) NOT NULL,
+  passengercapacity int,
+  location VARCHAR(250) NOT NULL,
+  experience float NOT NULL
+);
+
+CREATE TABLE CUSTOMERDATA (
+  id int PRIMARY KEY,
+  customnername VARCHAR(250) NOT NULL,
+  phonenumber VARCHAR(250) NOT NULL,
+  location VARCHAR(250) NOT NULL
+);
+
+CREATE TABLE CABDATA (
+  id int PRIMARY KEY,
+  drivername VARCHAR(250) NOT NULL,
+  phonenumber VARCHAR(250) NOT NULL,
+  registrationnumber VARCHAR(250) NOT NULL,
+  cabtype VARCHAR(250) NOT NULL,
+  passengercapacity int
+);
+
